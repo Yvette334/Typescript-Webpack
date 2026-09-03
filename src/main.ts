@@ -1,10 +1,17 @@
 // --- Starter JavaScript Code ---
 
 // A simple Book class (using constructor function in JS)
-function Book( title: string, author: string, year: number) {
-  this.title = title;
-  this.author = author;
-  this.year = year;
+
+class Book {
+    title: string;
+    author: string; 
+    year: number;
+
+    constructor( title: string, author: string, year: number) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+    }
 }
 
 // Function to display book information
@@ -13,7 +20,8 @@ function displayBook(book: Book): void {
   const bookDiv = document.createElement("div");
   bookDiv.innerHTML = `
     <h2>${book.title}</h2>
-    <p>By ${book.author}, ${book.year}</p>
+    <p>By ${book.author}, ${book.year}
+    </p>
   `;
   bookList.appendChild(bookDiv);
 }
