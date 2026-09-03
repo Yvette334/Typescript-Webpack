@@ -26,6 +26,12 @@ function displayBook(book: Book): void {
   bookList.appendChild(bookDiv);
 }
 
+interface Review {
+    bookId: number;
+    rating: number; 
+    comment: string;
+}
+
 // Create some book objects
 const book1: Book = new Book("The Hobbit", "J.R.R. Tolkien", 1937);
 const book2: Book = new Book("The Lord of the Rings", "J.R.R. Tolkien", 1954);
