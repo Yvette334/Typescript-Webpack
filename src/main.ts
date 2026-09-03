@@ -23,7 +23,7 @@ function displayBook(book: Book): void {
     <p>By ${book.author}, ${book.year}
     </p>
   `;
-  bookList.appendChild(bookDiv);
+  bookList?.appendChild(bookDiv);
 }
 
 interface Review {
